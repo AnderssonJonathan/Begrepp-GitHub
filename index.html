@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Begrepp-GitHub</title>
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+    <div class="header">
+        <h1>BEGREPP INOM WEBBUTVECKLING</h1>
+    </div>
+    <main>
+        <h2>Github flow</h2>
+        <p>I ett projekt för att t.ex. koda en hemsida så kan GitHub flow följas. Det innebära att de som kodar kommer
+            att arbeta utifrån en mall med särskilda steg som skall följas löpande under projektets gång. Då GitHub flow
+            följs kommer projekt att sparas kontinuerligt på ens GitHub konto. På så sätt kommer det finnas en struktur
+            genom hela projektet och det blir enkelt att gå tillbaka och granska för att se ändringar antingen under
+            själva processen eller efteråt. GitHub är en molnbaserad tjänst och ens arbete blir på så sätt tillgängligt
+            online och smidigt att dela med andra.
+        </p>
+        <p>Att följa GitHub flow är fullt möjligt att göra enbart via GitHubs
+            egna sida men det är mycket vanligt att arbeta med sitt projekt på ens egna dator. För att göra detta krävs
+            Git och stegen för att installera detta finns på GitHubs hemsida men kommer inte att tas upp i denna guide.
+            Men jag kommer att i de olika stegen att också inkludera hur du kan arbeta med din kod lokalt. Till det
+            använder jag Git, VS-code och terminalen i det.
+        </p>
+        <h3><u>Stegen för GitHub flow:</u></h3>
+        <h4>- Skapa ett repo</h4>
+        <p>
+            Det första att börja med är att skapa ett repository (repo). Detta är som en mapp där alla filer till ens
+            projekt ska placeras. Ens repo måste ha ett namn och därefter finns det olika inställningar som är möjliga
+            att lägga till eller ändra. T.ex. kan du välja ifall det ska vara public (öppet för alla) eller privat
+            (endast tillgängligt för dig). Det finns en möjlighet att skapa repot med en README-fil vilket kan vara
+            användbart då det behöver finnas något i repot för att alla funktioner ska vara tillgängliga.
+        </p>
+        <p>
+            När ditt repo ligger uppe är det sedan möjligt att kopiera länken till repot. Det är vanligt att också ha en
+            lokal repo-mapp på sin egen dator. Med hjälp av länken från GitHub och Git kan man skapa ett lokalt repo
+            till sin repo-mapp. Den är då en klon av hur repot på GitHub såg ut när länken till det repot kopierades.
+            Det är sedan möjligt att öppna detta lokala repo på sin dator med ett kodeditorprogram som t.ex. VS-code.
+        </p>
+        <h4>- Ändringar - commits & push</h4>
+        <p>
+            I sin nya bransch är det sedan möjligt att spara sitt arbete till den nuvarande branschen viket görs med
+            commits. Varje commit behöver en kommentar där man kortfattat förklarat vad man gjort t.ex. “Created logo.”.
+            Därefter är commiten redo att pushas fortfarande till den nya branschen. Med hjälp av detta kan laddas
+            projektet upp i molnet och andra deltagare i projektet kan gå in och titta på det du arbetar med och kanske
+            har du frågor till dem där.
+        </p>
+        <p>
+            I VS-code behöver ändringar läggas till med hjälp av ett kommando i terminalen t.ex. “git add .” som därmed
+            registrerar alla ändringar. Därefter görs en commit med följande kommando “git commit –m “dinKommentar”.
+            Sist görs en push med kommandot “git push –u origin namnPåDinBranch”.
+        </p>
+        <h4>Skapa pull request - Merge pull request</h4>
+        <p>
+            Nu är det möjligt att skapa en pull request för sin branch vilket innebär att du frågar dina kollegor i
+            projektet om feedback på dina ändringar. Här kan inställningar ha gjorts för projektet att t.ex. x-antal
+            kollegor måste godkänna en pull request. Om allt ser bra ut så kan de som granskar välja merge vilket då
+            kommer innebära att som finns i denna bransch kommer att läggas till main-branschen.
+        </p>
+        <h4>Radera din branch</h4>
+        <p>
+            Slutligen när ens branch har merge:at till main-branschen så är det möjligt att radera denna bransch
+            eftersom den inte används längre. En vanlig policy inom projekt med GitHub flow är att det är skaparen av
+            branschen som också raderar den.
+        </p>
+        <h2>Flexbox</h2>
+        <p>
+            Precis som namnet Flexbox indikerar så handlar det om en flexibel box. Flexbox Layout Module är dess
+            fullständiga namn är och det är alltså en komplett modul som innehåller en hel uppsättning av egenskaper.
+            Flexbox möjliggör det för oss att mer effektivt skapa en dynmaisk t.ex. hemsida som kan ändra storleken på
+            element och dess innehåll utifrån om sidan besöks från en mobil, surfplatta eller dator. Vissa av
+            egenskaperna kan appliceras på containers alltså parent element och då används flex container medans flex
+            items används på children.
+        </p>
+        <h2>DOM (Document Object Model)</h2>
+        <p>
+            DOM är ett API som används för att bygga hemsidor. Det är mest vanligt förekommande att det används genom
+            JavaScript men det är byggt för att kunna användas till vilket programspråk som helst. För objekt som utgör
+            strukturen och innehållet för exempelvis en hemsida är DOM datarepresentationen av dessa. Vilket gör så att
+            program som t.ex. JavaScript kan ändra strukturen av dokumentet som utgör själva sidan. Det som möjliggör
+            detta är att DOM representerar innehållet på sidan i form av noder och objekt på så sätt kan programspråken
+            interagera med innehållet på sidan. DOM:en behandlar ett html-dokumentet som en trädstruktur på följande
+            sätt:<img id="DOMtree" src="images/DOM.png" alt="DOM-trädet" width="300" height="300">
+        </p>
+        <p>
+            DOM:en kan kontrolleras i JavaScript på följande sätt:
+        </p>
+        <p>
+            <span id="const">const </span>loginButton = document.getElementById("login-form-submit");
+        </p>
+        <p>
+            Här sätts loginButton detta tilldelas till ett element som DOM hämtar via id:et “login-form-submit".
+        </p>
+        <h2>Fin kod</h2>
+        <p>
+            Vid programmering handlar det inte bara om att du själv ska kunna förstå din kod. Som programmerare är det
+            vanligt att sträva efter en kod som är enkel att förstå det vill säga en “fin kod”. Att det finns en logisk
+            uppbyggnad, att klasser, id osv. har namn som tydligt indikerar vad de syftar till, att koden följer samma
+            struktur, det kanske finns nödvändiga radbrytningar som gör koden tydligare osv.
+        </p>
+        <h2>Ramverk</h2>
+        <p>
+            Att bygga upp en t.ex. komplett hemsida görs idag sällan från grunden. Ramverk möjliggör det för oss att
+            bygga en hemsida på en redan färdig grund vilken det är möjligt för oss att hämta de byggstenar som vi vill
+            använda oss av. Det finns idag massvis med olika ramverk, de lämpas sig till olika typer av uppgifter och är
+            oftast kopplade till ett särskilt programspråk. Exempel på ramverk:
+        </p>
+        <h4>- AngularJS</h4>
+        <p>
+            Ett av de vanligaste web-ramverken är AngularJS. Det är ett front-end JavaScript ramverk som är utvecklat
+            och stöds av Google. AngularJS innehåller funktioner som t.ex. tvåvägsdatabindning vilket minskar
+            utvecklingstiden. Olika kodbitar kan också lättare interagera med varandra med hjälp av s.k.
+            beroendeinjektioner i AngularJS.
+        </p>
+        <h4>- Express</h4>
+        <p>
+            Till Node.js finns Express som är ett back-end ramverk. Det gör det möjligt att börja konfigurera servrar
+            med väldigt lite dataresurser. Det är skrivet i JavaScript, är gratis och open-source och det har också ett
+            rykte av att vara väldigt flexibelt. Enligt Express själva så tillhandahåller det ett tunt lager av
+            grundläggane webbapplikationer utan att skymma Node.js-funktioner.
+        </p>
+        <br><br><h2 id="references"><u>Referenslista</u></h2>
+        <p class="referensLista">
+            GitHub. (u.å.). GitHub flow. Hämtad 2022-10-07 från<br><a href="https://docs.github.com/en/get-started/quickstart/github-flow">https://docs.github.com/en/get-started/quickstart/github-flow</a>
+        </p>
+        <p class="referensLista">
+            W3schools. (u.å.). flexbox. Hämtad 2022-10-07 från<br><a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a> 
+        </p>
+        <p class="referensLista">
+            CSS-TRICKS. (2013, 8 april). A complete guide to flexbox. Hämtad 2022-10-07 från<br><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a> 
+        </p>
+        <p class="referensLista">
+            MDN Web Docs. (2022, 11 mars). Introduction to the DOM. Hämtad 2022-10-07 från<br><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a> 
+        </p>
+        <p class="referensLista">
+            Codecademy. (2021 23 september). What Is a Framework?. Hämtad 2022-10-07 från<br><a href="https://www.codecademy.com/resources/blog/what-is-a-framework/">https://www.codecademy.com/resources/blog/what-is-a-framework/</a> 
+        </p>
+
+
+
+    </main>
 </body>
+
 </html>
