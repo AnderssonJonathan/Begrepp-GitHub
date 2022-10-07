@@ -30,3 +30,7 @@ main{
 .referensLista {
     text-align: center;
 }
+
+#imageRef {
+    font-size: 12px;
+}
