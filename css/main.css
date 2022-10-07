@@ -1,0 +1,32 @@
+.header{
+    text-align: center;
+    font-size: x-large
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+}
+
+main{
+    text-align: justify;
+}
+
+#DOMtree {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#const {
+    color: blue;
+}
+
+#references {
+    font-weight:100;
+}
+
+.referensLista {
+    text-align: center;
+}
